@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Component/Navbar';
 import {BrowserRouter ,Route, Routes } from 'react-router-dom';
-import registerscreen from './Screen/registerscreen';
+import loginscreen from './Screen/loginscreen';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Routes>
 
-      <Route path='/register' exact Component={registerscreen} />
+      <Route path='/login' exact Component={loginscreen} />
       </Routes>
       </BrowserRouter>
       
