@@ -1,16 +1,12 @@
 import React from 'react'
-import '../Css/Loginscreen.css'
-import { Link } from "react-router-dom";
+import '../Css/Signupscreen.css'
 
-const Loginscreen = ()  => {
-   
-  
- 
-
+function Signupscreen() {
   return (
-    <div className='container'>
+    <div>
+         <div className='container'>
     <div className="header">
-      <div className="text">Login</div>
+      <div className="text">Singn up</div>
       <div className="underline"></div>
     </div>
     <div className="inputs">
@@ -23,15 +19,15 @@ const Loginscreen = ()  => {
         <img src="" alt="" />
         <input type="password" placeholder='Password' />
       </div>
-      <div className="forgot-password">Lost password?<span>Click here</span></div>
       <div className="submit-container">
         
-        <div className= "submit">Login</div>
+        <div className= "submit">Sign up</div>
       </div>
-      <div className="newuser">New user ? <span><Link to={`/register`}>Sign up</Link></span></div>     
+          
       </div>       
   </div>
+    </div>
   )
 }
 
-export default Loginscreen
+export default Signupscreen
