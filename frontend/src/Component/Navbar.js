@@ -16,7 +16,7 @@ function Navbar() {
           <a class="nav-link active" aria-current="page" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link" href="/register">Register</a>
         </li>
         
         
