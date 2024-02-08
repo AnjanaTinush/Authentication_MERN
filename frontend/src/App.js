@@ -11,11 +11,13 @@ function App() {
     <div className="App">
 
       <Navbar/>
+      
       <BrowserRouter>
       <Routes>
-  
+      
       <Route path='/login' exact Component={Loginscreen}/>  
       <Route path='/register' exact Component={Signupscreen} />
+      
 
       </Routes>
       </BrowserRouter>
