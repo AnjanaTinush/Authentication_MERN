@@ -5,9 +5,13 @@ const path =require('path')
 
 require('dotenv').config();
 
-app.use(express.json())
 
 const dbconfig= require('./db')
+const usersRoutes= require('./Route/userRoutes')
+
+app.use(express.json())
+
+app.use('/api/users',usersRoutes)
 
 const port =process.env.PORT || 5000;
 
