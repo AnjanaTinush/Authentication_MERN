@@ -1,18 +1,18 @@
 const express = require("express");
 const cors = require("cors");
-const app =express(); 
-const path =require('path')
+const app = express();
+const path = require('path');
 
 require('dotenv').config();
 
+const dbconfig = require('./db');
+const usersRoutes = require('./Route/userRoutes');
 
-const dbconfig= require('./db')
-const usersRoutes= require('./Route/userRoutes')
+app.use(cors()); // Add this line to enable CORS for all routes
+app.use(express.json());
 
-app.use(express.json())
+app.use('/api/users', usersRoutes);
 
-app.use('/api/users',usersRoutes)
+const port = process.env.PORT || 5000;
 
-const port =process.env.PORT || 5000;
-
-app.listen(port,()=>console.log(`Node server started using nodemon`));
+app.listen(port, () => console.log(`Node server started using nodemon`));
